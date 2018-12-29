@@ -14,6 +14,7 @@ def call(String buildStatus = 'STARTED') {
     } else {
         //color = 'RED'
         colorCode = '#9E1A1A'
+        summary = "ERROR: ${env.JOB_NAME}"
         summary += "\n${env.BUILD_URL}"
     }
 
